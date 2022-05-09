@@ -14,26 +14,42 @@
       </div>
     </div>
   </section>
-
-  <section class="ftco-section ftco-wrap-about ftco-no-pb ftco-no-pt">
-    <h1>Posts</h3>
-        @if(count($feedback)>=1)
-           @foreach($feedback as $f)
-                <div class="well">
-                    <h3>{{$f->name}}</h3>
-                </div>
-           @endforeach
-        @else
-           <p>No posts found</p>
-        @endif
-</section>
-
+  <section class="ftco-section contact-section bg-light">
+    <div class="container">
+      <div class="row d-flex contact-info">
+        <div class="col-md-12">
+          <h2 class="h4 font-weight-bold">Contact Information</h2>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-md-3 d-flex">
+         <div class="dbox">
+           <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+         </div>
+       </div>
+       <div class="col-md-3 d-flex">
+         <div class="dbox">
+           <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+         </div>
+       </div>
+       <div class="col-md-3 d-flex">
+         <div class="dbox">
+           <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+         </div>
+       </div>
+       <div class="col-md-3 d-flex">
+         <div class="dbox">
+           <p><span>Website</span> <a href="#">yoursite.com</a></p>
+         </div>
+       </div>
+     </div>
+   </div>
+  </section>
 <section class="ftco-section ftco-no-pt contact-section">
     <div class="container">
      <div class="row d-flex align-items-stretch no-gutters">
       <div class="col-md-6 p-5 order-md-last">
 
-       <h2 class="h4 mb-5 font-weight-bold">Contact Us</h2>
+       <h2 class="h4 mb-5 font-weight-bold">Rate Our Restaurant</h2>
        <form method="post" action="/newfeedback">
            @csrf
          <div class="form-group">
@@ -67,6 +83,9 @@
          </div>
        </form>
      </div>
+     <div class="col-md-6 align-items-stretch">
+      <img src="images/feedback.png" class="feedbackimg" alt="">
+    </div>
    </div>
    </section>
 
