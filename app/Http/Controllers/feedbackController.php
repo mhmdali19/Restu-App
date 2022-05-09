@@ -56,7 +56,7 @@ class feedbackController extends Controller
         $post->rate = $request->input('star');
         $post->body = $request->input('message');
         $post->save();
-        return view('App\Http\Controllers\feedbackController');
+        return redirect('/feedback');
     }
 
     /**
