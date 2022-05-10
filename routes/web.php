@@ -20,6 +20,6 @@ Route::get('/menu', 'App\Http\Controllers\pagecontroller@menu');
 
 Route::resource('feedback','App\Http\Controllers\feedbackController');
 Route::post('/newfeedback', 'App\Http\Controllers\feedbackController@store');
-
+Route::post('/newres', 'App\Http\Controllers\reservationController@store');
 
 Route::get('/reservation', 'App\Http\Controllers\pagecontroller@reservation');

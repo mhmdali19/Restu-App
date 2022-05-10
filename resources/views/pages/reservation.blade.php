@@ -20,29 +20,30 @@
     <div class="container">
         <div class="row no-gutters">
             <div class="col-sm-12 p-4 p-md-5 d-flex align-items-center justify-content-center bg-primary">
-                <form action="#" class="appointment-form">
+                <form method="post" action="/newres" class="appointment-form">
+                    @csrf
                     <h3 class="mb-3">Book your Table</h3>
                     <div class="row justify-content-center">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="name" class="form-control" placeholder="Name">
+                                <input type="name" name="name" class="form-control" placeholder="Name">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email">
+                                <input type="email" name="email" class="form-control" placeholder="Email">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Phone">
+                                <input type="text" name="phonenumber" class="form-control" placeholder="Phone">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <div class="input-wrap">
                                     <div class="icon"><span class="fa fa-calendar"></span></div>
-                                    <input type="text" class="form-control book_date" placeholder="Check-In">
+                                    <input type="text" name="date" class="form-control book_date" placeholder="Check-In">
                                 </div>
                             </div>
                         </div>
@@ -50,7 +51,7 @@
                             <div class="form-group">
                                 <div class="input-wrap">
                                     <div class="icon"><span class="fa fa-clock-o"></span></div>
-                                    <input type="text" class="form-control book_time" placeholder="Time">
+                                    <input type="text" name="time" class="form-control book_time" placeholder="Time">
                                 </div>
                             </div>
                         </div>
