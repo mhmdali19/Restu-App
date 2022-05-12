@@ -23,3 +23,7 @@ Route::post('/newfeedback', 'App\Http\Controllers\feedbackController@store');
 Route::post('/newres', 'App\Http\Controllers\reservationController@store');
 
 Route::get('/reservation', 'App\Http\Controllers\pagecontroller@reservation');
+///Route::get('/feedbackview', 'App\Http\Controllers\pagecontroller@feedbackview');
+
+Route::resource('/feedbackview','App\Http\Controllers\adminfeedbackController');
+Route::resource('/reservationview','App\Http\Controllers\adminreservationController');
