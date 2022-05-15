@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\feedback;
-use DB;
 
-class feedbackController extends Controller
+class MenuController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +13,7 @@ class feedbackController extends Controller
      */
     public function index()
     {
-
-
-        $feedback=feedback::orderBy ('id', 'desc')->get()->take(5);
-        return view('pages.feedback')->with('feedback',$feedback);
+        //
     }
 
     /**
@@ -40,23 +35,6 @@ class feedbackController extends Controller
     public function store(Request $request)
     {
         //
-
-       /// print_r($request->input());
-
-        $this->validate($request, [
-            'name' => 'required',
-            'email' => 'required',
-            'star' => 'required',
-            'message' => 'required'
-        ]);
-
-        $post = new feedback;
-        $post->name =  $request->input('name');
-        $post->Email =  $request->input('email');
-        $post->rate = $request->input('star');
-        $post->body = $request->input('message');
-        $post->save();
-        return redirect('/feedback');
     }
 
     /**

@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\feedback;
-use DB;
+use App\Models\Product;
 
-class feedbackController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +15,10 @@ class feedbackController extends Controller
     public function index()
     {
 
+        $products = Product::all();
+        return view('pages.product')->with('products', $products);
 
-        $feedback=feedback::orderBy ('id', 'desc')->get()->take(5);
-        return view('pages.feedback')->with('feedback',$feedback);
+
     }
 
     /**
@@ -39,25 +39,35 @@ class feedbackController extends Controller
      */
     public function store(Request $request)
     {
-        //
-
-       /// print_r($request->input());
-
         $this->validate($request, [
             'name' => 'required',
-            'email' => 'required',
-            'star' => 'required',
-            'message' => 'required'
+            'desc' => 'required',
+            'price' => 'required',
+            'src' => 'required',
+            'active' => 'required',
         ]);
 
-        $post = new feedback;
-        $post->name =  $request->input('name');
-        $post->Email =  $request->input('email');
-        $post->rate = $request->input('star');
-        $post->body = $request->input('message');
-        $post->save();
-        return redirect('/feedback');
+        $prod = new Product;
+        $prod->name =  $request->input('name');
+        $prod->price =  $request->input('price');
+        $prod->description = $request->input('desc');
+
+        $prod->is_active = $request->input('active');
+        //dd($request->all());
+
+        if($request->file('src')){
+            $file = $request->file('src');
+            $filename= date('YmdHi').$file->getClientOriginalName();
+            $file->move(public_path('public/images'),$filename);
+            $prod->src = $filename;
+        }else{
+            //throw error because we can't keep a product without image
+            dd($request->all());
+        }
+        $prod->save();
+        return redirect('/product');
     }
+
 
     /**
      * Display the specified resource.
@@ -101,6 +111,9 @@ class feedbackController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data=Product::find($id);
+        $data->delete();
+        return redirect('/product');
     }
 }
+
