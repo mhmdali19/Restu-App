@@ -22,6 +22,10 @@ class Pagecontroller extends Controller
     
         return view('pages.feedback');
     }
+    public function feedbackview(){
+    
+        return view('pages.admin_feedback');
+    }
 
     public function menu(){
     

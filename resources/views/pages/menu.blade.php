@@ -442,7 +442,7 @@
                     <span class="flat flaticon-ice-cream" style="right: 0;"></span>
                 </div>
             </div>
-            
+
             <div class="col-md-6 col-lg-4">
                 <div class="menu-wrap">
                     <div class="heading-menu text-center ftco-animate">

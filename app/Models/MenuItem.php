@@ -5,16 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class feedback extends Model
+class MenuItem extends Model
 {
-
     public $timestamps=false;
 
-        // Table name
-        public $table='feedback';
+    // Table name
+    public $table='menu_items';
 
-        // Primary Key
-        public $primaryKey='id';
+    // Primary Key
+    public $primaryKey='id';
 
     use HasFactory;
 }
