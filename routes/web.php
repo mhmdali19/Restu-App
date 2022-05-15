@@ -15,7 +15,7 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\pagecontroller@index');
+Route::resource('/', 'App\Http\Controllers\indexcontroller');
 Route::get('/about', 'App\Http\Controllers\pagecontroller@about');
 Route::get('/menu', 'App\Http\Controllers\pagecontroller@menu');
 ///Route::get('/feedback', 'App\Http\Controllers\pagecontroller@feedback');
@@ -42,3 +42,11 @@ Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home
 Route::resource('/feedbackview','App\Http\Controllers\adminfeedbackController');
 Route::resource('/reservationview','App\Http\Controllers\adminreservationController');
 // >>>>>>> 1ded83af8f8c19123d5c729e569b71dc8a3011e5
+// offers
+Route::resource('/offers','App\Http\Controllers\offersController');
+Route::post('/newoffer', 'App\Http\Controllers\offersController@store');
+Route::get('delete/{id}','App\Http\Controllers\offersController@destroy');
+// events
+Route::resource('/events','App\Http\Controllers\eventsController');
+Route::post('/newevent', 'App\Http\Controllers\eventsController@store');
+Route::get('delete/{id}','App\Http\Controllers\eventsController@destroy');

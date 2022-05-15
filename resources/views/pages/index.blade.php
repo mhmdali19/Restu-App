@@ -81,50 +81,26 @@
             </div>
         </div>
         <div class="row">
+            @if (count($eve) >= 1)
+                            @foreach ($eve as $e)
             <div class="col-md-4 ftco-animate">
                 <div class="blog-entry">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+                    <a href="/menu" class="block-20" style="background-image: url({{ url('public/images/' . $e->src) }})">
                     </a>
                     <div class="text px-4 pt-3 pb-4">
-                        
-                        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                        <p class="clearfix">
-                            <a href="/reservation" class="float-left read btn btn-primary">Reserve!</a>
-                            
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 ftco-animate">
-                <div class="blog-entry">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-                    </a>
-                    <div class="text px-4 pt-3 pb-4">
-                        <div class="meta">
-                            <div><a href="#">August 3, 2020</a></div>
-                            <div><a href="#">Admin</a></div>
+                        <div >
+                            <div>Events end at : {{$e->enddate}}</div>
                         </div>
-                        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                        <h3 class="heading">{{$e->desc}}</h3>
                         <p class="clearfix">
-                            <a href="/reservation" class="float-left read btn btn-primary">Reserve!</a>
+                            <a href="/reservation" class="float-left read btn btn-primary">Reserve!</a>                          
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 ftco-animate">
-                <div class="blog-entry">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-                    </a>
-                    <div class="text px-4 pt-3 pb-4">
-                        
-                        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                        <p class="clearfix">
-                            <a href="/reservation" class="float-left read btn btn-primary">Reserve!</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                            @endforeach
+            @endif               
+         </div>
     </div>
 </section>
 {{-- end events --}}
@@ -139,23 +115,25 @@
             </div>
         </div>
         <div class="row">
+            @if (count($off) >= 1)
+                            @foreach ($off as $f)
             <div class="col-md-6 col-lg-4">
                 <div class="menu-wrap" >
                     <div class="heading-menu text-center ftco-animate">
-                        <h3>Breakfast </h3>
+                        <h3>{{$f->offername}} </h3>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                        <div class="menu-img img" style="background-image: url(images/breakfast-1.jpg);"></div>
+                        <div class="menu-img img" style="background-image: url({{ url('public/images/' . $f->src) }})"></div>
                         <div class="text">
                             <div class="d-flex">
                                 <div class="one-half">
-                                    <h3>Beef Roast Source</h3>
+                                    <h3>{{$f->desc}} </h3>
                                 </div>
                                 <div class="one-forth">
-                                    <span class="price">$29</span>
+                                    <span class="price">{{$f->price}}$ </span>
                                 </div>
                             </div>
-                            <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                            
                         </div>
                     </div>
                     
@@ -164,72 +142,10 @@
                     <span class="flat flaticon-breakfast" style="right: 0;"></span>
                 </div>
             </div>
+            @endforeach
+            @endif
 
-            <div class="col-md-6 col-lg-4">
-                <div class="menu-wrap">
-                    <div class="heading-menu text-center ftco-animate">
-                        <h3>Lunch</h3>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                        <div class="menu-img img" style="background-image: url(images/lunch-1.jpg);"></div>
-                        <div class="text">
-                            <div class="d-flex">
-                                <div class="one-half">
-                                    <h3>Beef Roast Source</h3>
-                                </div>
-                                <div class="one-forth">
-                                    <span class="price">$29</span>
-                                </div>
-                            </div>
-                            <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                        </div>
-                    </div>
-                    {{-- <div class="menus d-flex ftco-animate">
-                        <div class="menu-img img" style="background-image: url(images/lunch-2.jpg);"></div>
-                        <div class="text">
-                            <div class="d-flex">
-                                <div class="one-half">
-                                    <h3>Beef Roast Source</h3>
-                                </div>
-                                <div class="one-forth">
-                                    <span class="price">$29</span>
-                                </div>
-                            </div>
-                            <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                        </div>
-                    </div> --}}
-                   
-                    <span class="flat flaticon-pizza" style="left: 0;"></span>
-                    <span class="flat flaticon-chicken" style="right: 0;"></span>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="menu-wrap">
-                    <div class="heading-menu text-center ftco-animate">
-                        <h3>Dinner</h3>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                        <div class="menu-img img" style="background-image: url(images/dinner-1.jpg);"></div>
-                        <div class="text">
-                            <div class="d-flex">
-                                <div class="one-half">
-                                    <h3>Beef Roast Source</h3>
-                                </div>
-                                <div class="one-forth">
-                                    <span class="price">$29</span>
-                                </div>
-                            </div>
-                            <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                        </div>
-                    </div>
-           
-                    
-                    <span class="flat flaticon-omelette" style="left: 0;"></span>
-                    <span class="flat flaticon-burger" style="right: 0;"></span>
-                </div>
-            </div>
-        </div>
+  </div>
     </div>
 
 </section>
