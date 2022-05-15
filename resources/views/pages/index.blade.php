@@ -71,224 +71,13 @@
 
 {{-- end about --}}
 
-
-
-{{-- for booking --}}
-<section class="ftco-section ftco-intro" style="background-image: url(images/bg_3.jpg);">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <span>Now Booking</span>
-                <h2>Private Dinners &amp; Happy Hours</h2>
-                <button class="button-49" role="button">BOOK NOW!</button>
-            </div>
-        </div>
-    </div>
-</section>
-{{-- end booking --}}
-
-
-
-<section class="ftco-section testimony-section" style="background-image: url(images/bg_5.jpg);">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row justify-content-center mb-3 pb-2">
-            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                <span class="subheading">Testimony</span>
-                <h2 class="mb-4">Happy Customer</h2>
-            </div>
-        </div>
-        <div class="row ftco-animate justify-content-center">
-            <div class="col-md-7">
-                <div class="carousel-testimony owl-carousel ftco-owl">
-                    <div class="item">
-                        <div class="testimony-wrap text-center">
-                            <div class="text p-3">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="fa fa-quote-left"></i>
-                                    </span>
-                                </div>
-                                <p class="name">John Gustavo</p>
-                                <span class="position">Customer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-wrap text-center">
-                            <div class="text p-3">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="fa fa-quote-left"></i>
-                                    </span>
-                                </div>
-                                <p class="name">John Gustavo</p>
-                                <span class="position">Customer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-wrap text-center">
-                            <div class="text p-3">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="fa fa-quote-left"></i>
-                                    </span>
-                                </div>
-                                <p class="name">John Gustavo</p>
-                                <span class="position">Customer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-wrap text-center">
-                            <div class="text p-3">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="fa fa-quote-left"></i>
-                                    </span>
-                                </div>
-                                <p class="name">John Gustavo</p>
-                                <span class="position">Customer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-wrap text-center">
-                            <div class="text p-3">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="fa fa-quote-left"></i>
-                                    </span>
-                                </div>
-                                <p class="name">John Gustavo</p>
-                                <span class="position">Customer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="ftco-section bg-light">
+{{-- events --}}
+<section class="ftco-section " style="background-image: url('images/image_1.jpg');">
     <div class="container">
         <div class="row justify-content-center mb-5 pb-2">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-                <span class="subheading">Chef</span>
-                <h2 class="mb-4">Our Master Chef</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="staff">
-                    <div class="img" style="background-image: url(images/chef-4.jpg);"></div>
-                    <div class="text px-4 pt-2">
-                        <h3>John Gustavo</h3>
-                        <span class="position mb-2">CEO, Co Founder</span>
-                        <div class="faded">
-                            <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                            <ul class="ftco-social d-flex">
-                                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="staff">
-                    <div class="img" style="background-image: url(images/chef-2.jpg);"></div>
-                    <div class="text px-4 pt-2">
-                        <h3>Michelle Fraulen</h3>
-                        <span class="position mb-2">Head Chef</span>
-                        <div class="faded">
-                            <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                            <ul class="ftco-social d-flex">
-                                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="staff">
-                    <div class="img" style="background-image: url(images/chef-3.jpg);"></div>
-                    <div class="text px-4 pt-2">
-                        <h3>Alfred Smith</h3>
-                        <span class="position mb-2">Chef Cook</span>
-                        <div class="faded">
-                            <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                            <ul class="ftco-social d-flex">
-                                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="staff">
-                    <div class="img" style="background-image: url(images/chef-1.jpg);"></div>
-                    <div class="text px-4 pt-2">
-                        <h3>Antonio Santibanez</h3>
-                        <span class="position mb-2">Chef Cook</span>
-                        <div class="faded">
-                            <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                            <ul class="ftco-social d-flex">
-                                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="ftco-section ftco-no-pt ftco-no-pb">
-    <div class="container">
-        <div class="row d-flex">
-            <div class="col-md-6 d-flex">
-                <div class="img img-2 w-100 mr-md-2" style="background-image: url(images/bg_6.jpg);"></div>
-                <div class="img img-2 w-100 ml-md-2" style="background-image: url(images/bg_4.jpg);"></div>
-            </div>
-            <div class="col-md-6 ftco-animate makereservation p-4 p-md-5">
-                <div class="heading-section ftco-animate mb-5">
-                    <span class="subheading">This is our secrets</span>
-                    <h2 class="mb-4">Perfect Ingredients</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-                    </p>
-                    <p><a href="#" class="btn btn-primary">Learn more</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="ftco-section bg-light">
-    <div class="container">
-        <div class="row justify-content-center mb-5 pb-2">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-                <span class="subheading">Blog</span>
-                <h2 class="mb-4">Recent Blog</h2>
+            <div class="col-md-7 text-center heading-section ftco-animate bg-light" >
+                <span class="subheading">Events</span>
+                <h2 class="mb-4">Recent Events</h2>
             </div>
         </div>
         <div class="row">
@@ -297,14 +86,11 @@
                     <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
                     </a>
                     <div class="text px-4 pt-3 pb-4">
-                        <div class="meta">
-                            <div><a href="#">August 3, 2020</a></div>
-                            <div><a href="#">Admin</a></div>
-                        </div>
+                        
                         <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
                         <p class="clearfix">
-                            <a href="#" class="float-left read btn btn-primary">Read more</a>
-                            <a href="#" class="float-right meta-chat"><span class="fa fa-comment"></span> 3</a>
+                            <a href="/reservation" class="float-left read btn btn-primary">Reserve!</a>
+                            
                         </p>
                     </div>
                 </div>
@@ -320,8 +106,7 @@
                         </div>
                         <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
                         <p class="clearfix">
-                            <a href="#" class="float-left read btn btn-primary">Read more</a>
-                            <a href="#" class="float-right meta-chat"><span class="fa fa-comment"></span> 3</a>
+                            <a href="/reservation" class="float-left read btn btn-primary">Reserve!</a>
                         </p>
                     </div>
                 </div>
@@ -331,14 +116,10 @@
                     <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
                     </a>
                     <div class="text px-4 pt-3 pb-4">
-                        <div class="meta">
-                            <div><a href="#">August 3, 2020</a></div>
-                            <div><a href="#">Admin</a></div>
-                        </div>
+                        
                         <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
                         <p class="clearfix">
-                            <a href="#" class="float-left read btn btn-primary">Read more</a>
-                            <a href="#" class="float-right meta-chat"><span class="fa fa-comment"></span> 3</a>
+                            <a href="/reservation" class="float-left read btn btn-primary">Reserve!</a>
                         </p>
                     </div>
                 </div>
@@ -346,16 +127,129 @@
         </div>
     </div>
 </section>
+{{-- end events --}}
 
-<section class="ftco-section ftco-no-pt ftco-no-pb ftco-intro bg-primary">
-    <div class="container py-5">
-        <div class="row py-2">
-            <div class="col-md-12 text-center">
-                <h2>We Make Delicious &amp; Nutritious Food</h2>
-                <a href="#" class="btn btn-white btn-outline-white">Book A Table Now</a>
+{{-- offers --}}
+<section class="ftco-section" style="background-image: url(images/bg_1.jpg);">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-2">
+            <div class="col-md-7 text-center heading-section ftco-animate bg-light">
+                <span class="subheading">Specialties</span>
+                <h2 class="mb-4">Our Offers</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="menu-wrap" >
+                    <div class="heading-menu text-center ftco-animate">
+                        <h3>Breakfast </h3>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/breakfast-1.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Beef Roast Source</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">$29</span>
+                                </div>
+                            </div>
+                            <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                        </div>
+                    </div>
+                    
+                 
+                    <span class="flat flaticon-bread" style="left: 0;"></span>
+                    <span class="flat flaticon-breakfast" style="right: 0;"></span>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="menu-wrap">
+                    <div class="heading-menu text-center ftco-animate">
+                        <h3>Lunch</h3>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/lunch-1.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Beef Roast Source</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">$29</span>
+                                </div>
+                            </div>
+                            <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                        </div>
+                    </div>
+                    {{-- <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/lunch-2.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Beef Roast Source</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">$29</span>
+                                </div>
+                            </div>
+                            <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                        </div>
+                    </div> --}}
+                   
+                    <span class="flat flaticon-pizza" style="left: 0;"></span>
+                    <span class="flat flaticon-chicken" style="right: 0;"></span>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="menu-wrap">
+                    <div class="heading-menu text-center ftco-animate">
+                        <h3>Dinner</h3>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/dinner-1.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Beef Roast Source</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">$29</span>
+                                </div>
+                            </div>
+                            <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                        </div>
+                    </div>
+           
+                    
+                    <span class="flat flaticon-omelette" style="left: 0;"></span>
+                    <span class="flat flaticon-burger" style="right: 0;"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+  {{-- end offers --}}
+
+{{-- for booking --}}
+<section class="ftco-section ftco-intro" style="background-image: url(images/bg_3.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center" >
+                <span>Now Booking</span>
+                <h2>Private Dinners &amp; Happy Hours</h2>
+                <button class="button-49" role="button" onclick="window.location.href='/reservation'">BOOK NOW!</button>
+                
             </div>
         </div>
     </div>
 </section>
+{{-- end booking --}}
+
 
 @endsection
