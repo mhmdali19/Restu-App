@@ -8608,6 +8608,9 @@ h1, h2, h3, h4, h5,
     content: '';
     opacity: .4;
     background: #000000; }
+    .hero-wrap.for-products {
+        height: 250px; }
+
   .hero-wrap.hero-wrap-2 {
     height: 600px; }
     .hero-wrap.hero-wrap-2 .overlay {

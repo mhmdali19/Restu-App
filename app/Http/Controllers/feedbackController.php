@@ -15,7 +15,7 @@ class feedbackController extends Controller
      */
     public function index()
     {
-        //
+
 
         $feedback=feedback::all()->take(5);
         return view('pages.feedback')->with('feedback',$feedback);

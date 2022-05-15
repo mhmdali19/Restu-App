@@ -13,7 +13,7 @@ class feedback extends Model
         // Table name
         public $table='feedback';
 
-        // Primary Key 
+        // Primary Key
         public $primaryKey='id';
 
     use HasFactory;
