@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-12 col-md d-flex align-items-center">
-                <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+00 1234 567</a> or <span class="mailus">email us:</span> <a href="#">emailsample@email.com</a></p>
+                <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+961 78102030</a> or <span class="mailus">email us:</span> <a href="#">Grilledtaste@email.com</a></p>
             </div>
             <div class="col-12 col-md d-flex justify-content-md-end">
                 <p class="mb-0">Mon - Fri / 9:00-21:00, Sat - Sun / 10:00-20:00</p>
@@ -21,7 +21,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="index.html">Taste.<span>it</span></a>
+        <a class="navbar-brand" href="index.html">Grilled<span>taste</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
             aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu

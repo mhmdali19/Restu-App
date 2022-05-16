@@ -7,7 +7,7 @@
         <div class="container" style="position: relative; top: 10em;">
             <div class="row no-gutters slider-text align-items-end justify-content-center">
                 <div class="col-md-9 ftco-animate text-center mb-5">
-                    <h1 class="mb-2 bread">Offers And Events</h1>
+                    <h1 class="mb-2 bread">Events</h1>
                 </div>
             </div>
     </section>
@@ -69,9 +69,9 @@
                 <input type="file" name="src">
 
             </div>
-            
+            <button type="submit" class="button1">Add</button>
             </div>
-            <button type="submit" class="button">Add</button>
+            
         </form>
         <br>
     </div>

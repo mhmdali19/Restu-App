@@ -11,7 +11,7 @@
                 <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                     <div class="col-md-12 ftco-animate">
                         <div class="text w-100 mt-5 text-center">
-                            <span class="subheading">Taste.it Restaurant</h2></span>
+                            <span class="subheading">Grilled taste Restaurant</h2></span>
                             <h1>Cooking Since</h1>
                             <span class="subheading-2">1958</span>
                         </div>
@@ -26,7 +26,7 @@
                 <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                     <div class="col-md-12 ftco-animate">
                         <div class="text w-100 mt-5 text-center">
-                            <span class="subheading">Taste.it Restaurant</h2></span>
+                            <span class="subheading">Grilled taste Restaurant</h2></span>
                             <h1>Best Quality</h1>
                             <span class="subheading-2 sub">Food</span>
                         </div>
@@ -51,14 +51,11 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                We Are Feane
+                We Are Grilled taste Restaurant
               </h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+                There is some good news for you. We are proud to inform you that Grilled Taste is opening right next to your own home. We serve a variety of our own special mouthwatering burgers, exotic pastas and yummy desserts at very reasonable prices. We are enclosing a menu for you to go through.
             </p>
             <a href="/about">
               Read More

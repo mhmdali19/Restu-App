@@ -97,7 +97,7 @@ label.radio:after {
 input[type="radio"]:checked + label:after {
     opacity: 1;
 }
-button {
+.button1 {
     display: block;
     width: 200px;
     padding: 10px;
@@ -108,8 +108,9 @@ button {
     font-size: 14px;
     font-weight: 600;
     color: rgb(0, 0, 0);
+    
 }
-button:hover {
+.button1:hover {
     background: #290a0a;
     color: #ffffff;
 }

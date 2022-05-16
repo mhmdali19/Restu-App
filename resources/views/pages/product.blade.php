@@ -95,7 +95,7 @@
                         <label for="NonActive" class="radio">No</label>
                     </div>
                 </div>
-                <button type="submit" class="button">Add</button>
+                <button type="submit" class="button1">Add</button>
             </form>
         </div>
     </section>

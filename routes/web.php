@@ -16,7 +16,7 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::resource('/', 'App\Http\Controllers\indexcontroller');
-Route::get('/about', 'App\Http\Controllers\pagecontroller@about');
+Route::resource('/about', 'App\Http\Controllers\aboutcontroller');
 Route::get('/menu', 'App\Http\Controllers\pagecontroller@menu');
 ///Route::get('/feedback', 'App\Http\Controllers\pagecontroller@feedback');
 
@@ -24,7 +24,7 @@ Route::resource('feedback','App\Http\Controllers\feedbackController');
 Route::post('/newfeedback', 'App\Http\Controllers\feedbackController@store');
 Route::post('/newres', 'App\Http\Controllers\reservationController@store');
 
-Route::get('/reservation', 'App\Http\Controllers\pagecontroller@reservation');
+Route::resource('/reservation', 'App\Http\Controllers\reservationcontroller');
 
 Route::resource('/product','App\Http\Controllers\ProductController');
 
@@ -45,7 +45,7 @@ Route::resource('/reservationview','App\Http\Controllers\adminreservationControl
 // offers
 Route::resource('/offers','App\Http\Controllers\offersController');
 Route::post('/newoffer', 'App\Http\Controllers\offersController@store');
-Route::get('delete/{id}','App\Http\Controllers\offersController@destroy');
+Route::get('delete1/{id}','App\Http\Controllers\offersController@destroy');
 // events
 Route::resource('/events','App\Http\Controllers\eventsController');
 Route::post('/newevent', 'App\Http\Controllers\eventsController@store');

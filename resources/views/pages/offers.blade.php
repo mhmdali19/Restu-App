@@ -7,7 +7,7 @@
         <div class="container" style="position: relative; top: 10em;">
             <div class="row no-gutters slider-text align-items-end justify-content-center">
                 <div class="col-md-9 ftco-animate text-center mb-5">
-                    <h1 class="mb-2 bread">Offers And Events</h1>
+                    <h1 class="mb-2 bread">Offers</h1>
                 </div>
             </div>
     </section>
@@ -32,7 +32,7 @@
                             <span class="button-82-shadow"></span>
                             <span class="button-82-edge"></span>
                             <span class="button-82-front text" >
-                                <a href={{ 'delete/' . $offer->id }}>Delete Offer</a>
+                                <a href={{ 'delete1/' . $offer->id }}>Delete Offer</a>
                             </span>
                         </button>
 
@@ -64,7 +64,7 @@
                 </div>
                 
                 </div>
-                <button type="submit" class="button">Add</button>
+                
             </form>
             <br>
         </div>
