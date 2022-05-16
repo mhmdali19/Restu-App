@@ -3,11 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Menu;
-use App\Models\Product;
+use App\Models\event;
+use DB;
 
-
-class MenuController extends Controller
+class eventscontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,10 +15,8 @@ class MenuController extends Controller
      */
     public function index()
     {
-
-        $products = Product::all();
-        $menus = Menu::all();
-        return view('pages.menu')->with('products', $products)->with('menus', $menus);
+        $events = event::all();
+        return view('pages.events')->with('events', $events);
     }
 
     /**
@@ -40,7 +37,28 @@ class MenuController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'desc' => 'required',
+            'enddate' => 'required',
+            'src' => 'required',
+            
+        ]);
+
+        $post = new event;
+        $post->desc =  $request->input('desc');
+        $post->enddate =  $request->input('enddate');
+        
+        if($request->file('src')){
+            $file = $request->file('src');
+            $filename= date('YmdHi').$file->getClientOriginalName();
+            $file->move(public_path('public/images'),$filename);
+            $post->src = $filename;
+        }else{
+            //throw error because we can't keep a product without image
+            dd($request->all());
+        }
+        $post->save();
+        return redirect('/events');
     }
 
     /**
@@ -85,6 +103,8 @@ class MenuController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data=event::find($id);
+        $data->delete();
+        return redirect('/events');
     }
 }

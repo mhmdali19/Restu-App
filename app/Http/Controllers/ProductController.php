@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\Menu;
+
 
 class ProductController extends Controller
 {
@@ -15,8 +17,9 @@ class ProductController extends Controller
     public function index()
     {
 
+        $menus = Menu::all();
         $products = Product::all();
-        return view('pages.product')->with('products', $products);
+        return view('pages.product')->with('products', $products)->with('menus',$menus);
 
 
     }
@@ -44,15 +47,17 @@ class ProductController extends Controller
             'desc' => 'required',
             'price' => 'required',
             'src' => 'required',
-            'active' => 'required',
+            'menu_type' => 'required',
+
         ]);
 
         $prod = new Product;
         $prod->name =  $request->input('name');
         $prod->price =  $request->input('price');
         $prod->description = $request->input('desc');
+        $prod->menu_id = $request->input('menu_type');
 
-        $prod->is_active = $request->input('active');
+
         //dd($request->all());
 
         if($request->file('src')){

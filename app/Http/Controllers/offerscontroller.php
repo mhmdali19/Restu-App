@@ -3,11 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Menu;
-use App\Models\Product;
+use App\Models\offer;
+use DB;
 
-
-class MenuController extends Controller
+class offerscontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,10 +15,8 @@ class MenuController extends Controller
      */
     public function index()
     {
-
-        $products = Product::all();
-        $menus = Menu::all();
-        return view('pages.menu')->with('products', $products)->with('menus', $menus);
+        $offers = offer::all();
+        return view('pages.offers')->with('offers', $offers);
     }
 
     /**
@@ -40,7 +37,30 @@ class MenuController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'offername' => 'required',
+            'desc' => 'required',
+            'price' => 'required',
+            'src' => 'required',
+            
+        ]);
+
+        $post = new offer;
+        $post->offername =  $request->input('offername');
+        $post->desc =  $request->input('desc');
+        $post->price = $request->input('price');
+        
+        if($request->file('src')){
+            $file = $request->file('src');
+            $filename= date('YmdHi').$file->getClientOriginalName();
+            $file->move(public_path('public/images'),$filename);
+            $post->src = $filename;
+        }else{
+            //throw error because we can't keep a product without image
+            dd($request->all());
+        }
+        $post->save();
+        return redirect('/offers');
     }
 
     /**
@@ -85,6 +105,8 @@ class MenuController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data=offer::find($id);
+        $data->delete();
+        return redirect('/offers');
     }
 }
