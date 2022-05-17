@@ -38,7 +38,7 @@
                             <span class="button-82-shadow"></span>
                             <span class="button-82-edge"></span>
                             <span class="button-82-front text">
-                                <a href={{ 'delete/' . $product->id }}>Delete</a>
+                                <a href={{ 'deletep/' . $product->id }}>Delete</a>
                             </span>
                         </button>
 
@@ -77,33 +77,9 @@
                 </div>
 
 
-                <h3>is Active for now</h3>
-                <div class="metod">
-                    <div>
-                        <input type="radio" value="1" id="Active" name="active" checked />
-                        <label for="Active" class="radio">Yes</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="0" id="NonActive" name="active" />
-                        <label for="NonActive" class="radio">No</label>
-                    </div>
-                </div>
-
                 <button type="submit" class="button1">Add</button>
             </form>
         </div>
     </section>
     {{-- end of form --}}
-
-    <section>
-        <div class="centerlog">
-            {{-- <form action="/logout" method="post">
-
-                <button class="button-86" role="button">LOGOUT</button>
-
-
-            </form> --}}
-
-        </div>
-    </section>
 @endsection

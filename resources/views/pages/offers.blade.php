@@ -62,7 +62,7 @@
                     <input type="file" name="src">
 
                 </div>
-                
+                <button type="submit" class="button1">Add</button>
                 </div>
                 
             </form>

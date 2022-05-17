@@ -66,7 +66,7 @@ Route::group(['middleware' => ['isAdmin']], function () {
 // Admin Product
     Route::resource('/product', 'App\Http\Controllers\ProductController');
     Route::post('/newproduct', 'App\Http\Controllers\ProductController@store');
-    Route::get('delete/{id}', 'App\Http\Controllers\ProductController@destroy');
+    Route::get('deletep/{id}', 'App\Http\Controllers\ProductController@destroy');
 
 //Admin offers
     Route::resource('/offers', 'App\Http\Controllers\offersController');
