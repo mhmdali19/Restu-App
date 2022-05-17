@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layout.log')
 
 @section('content')
 <div class="container" style="margin-top: 150px">

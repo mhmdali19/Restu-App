@@ -35,7 +35,7 @@
         </button>
         @auth
             @if (Auth::check())
-                <h4 style="color:white;">Welcome, {{ Auth::user()->name }}</h4>
+                <h4 style="color:white;" class="mb-4">Welcome, {{ Auth::user()->name }}</h4>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="nav-item">
                     @csrf
 

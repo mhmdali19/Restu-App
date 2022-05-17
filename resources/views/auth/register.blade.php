@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layout.reg')
 
 @section('content')
     <div class="container" style="margin-top: 200px">
