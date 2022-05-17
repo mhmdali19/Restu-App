@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<link rel="shortcut icon" href="images/aboutUsimg.png" type="">
-	<title>Taste.it - Free Bootstrap 4 Template by Colorlib</title>
+	<title>Grilled taste</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,7 +12,7 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	
+
 
 
 	<link rel="stylesheet" href="css/animate.css">
@@ -35,6 +35,7 @@
 
     @yield('content')
 
+    
     @include ('inc.footer')
 
 

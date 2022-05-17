@@ -17,44 +17,39 @@ use App\Http\Controllers\Auth\RegisterController;
 |
 */
 
+// Home Index
 Route::resource('/', 'App\Http\Controllers\indexcontroller');
-Route::get('/about', 'App\Http\Controllers\pagecontroller@about');
-// Route::get('/menu', 'App\Http\Controllers\pagecontroller@menu');
 
-
-Route::resource('feedback','App\Http\Controllers\feedbackController');
-
-Route::post('/newfeedback', 'App\Http\Controllers\feedbackController@store');
-Route::post('/newres', 'App\Http\Controllers\reservationController@store');
-
-Route::get('/reservation', 'App\Http\Controllers\pagecontroller@reservation');
-
-
-
-
-Route::post('/newproduct', 'App\Http\Controllers\ProductController@store');
-Route::get('delete/{id}','App\Http\Controllers\ProductController@destroy');
-//
-//
-//
-//
-// Admin
-Route::resource('/feedbackview','App\Http\Controllers\adminfeedbackController');
-Route::resource('/reservationview','App\Http\Controllers\adminreservationController');
-
+// About
+Route::resource('/about', 'App\Http\Controllers\aboutcontroller');
 
 // Menu
-Route::resource('menu','App\Http\Controllers\MenuController');
+Route::resource('/menu','App\Http\Controllers\MenuController');
 
+// Reservation
+Route::resource('/reservation', 'App\Http\Controllers\reservationcontroller');
+Route::post('/newres', 'App\Http\Controllers\reservationController@store');
 
-// offers
-Route::resource('/offers','App\Http\Controllers\offersController');
-Route::post('/newoffer', 'App\Http\Controllers\offersController@store');
-Route::get('delete/{id}','App\Http\Controllers\offersController@destroy');
-// events
-Route::resource('/events','App\Http\Controllers\eventsController');
-Route::post('/newevent', 'App\Http\Controllers\eventsController@store');
-Route::get('delete/{id}','App\Http\Controllers\eventsController@destroy');
+// Feedback
+Route::resource('feedback','App\Http\Controllers\feedbackController');
+Route::post('/newfeedback', 'App\Http\Controllers\feedbackController@store');
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// Admin  ///////////////////////
+//////////
+// Admin Feedback
+
 
 
 
@@ -69,7 +64,26 @@ Route::group(['middleware' => ['isAdmin']], function () {
     Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home');
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('adminHome', 'App\Http\Controllers\HomeController@adminView')->name('admin.view');
-    Route::resource('/product','App\Http\Controllers\ProductController');
+
+    Route::resource('/feedbackview','App\Http\Controllers\adminfeedbackController');
+
+// Admin Reservation
+Route::resource('/reservationview','App\Http\Controllers\adminreservationController');
+
+// Admin Product
+Route::resource('/product','App\Http\Controllers\ProductController');
+Route::post('/newproduct', 'App\Http\Controllers\ProductController@store');
+Route::get('delete/{id}','App\Http\Controllers\ProductController@destroy');
+
+//Admin offers
+Route::resource('/offers','App\Http\Controllers\offersController');
+Route::post('/newoffer', 'App\Http\Controllers\offersController@store');
+Route::get('delete1/{id}','App\Http\Controllers\offersController@destroy');
+
+//Admin events
+Route::resource('/events','App\Http\Controllers\eventsController');
+Route::post('/newevent', 'App\Http\Controllers\eventsController@store');
+Route::get('delete/{id}','App\Http\Controllers\eventsController@destroy');
 });
 
 

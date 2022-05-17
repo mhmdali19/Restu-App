@@ -3,8 +3,8 @@
         <div class="row mb-5">
             <div class="col-md-6 col-lg-3">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Taste.it</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+                    <h2 class="ftco-heading-2">Grilled taste</h2>
+                    <p>There is some good news for you. We are proud to inform you that Grilled Taste is opening right next to your own home. We serve a variety of our own special mouthwatering burgers, exotic pastas and yummy desserts at very reasonable prices. We are enclosing a menu for you to go through.</p>
                     <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                         <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
                         <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -49,14 +49,13 @@
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Newsletter</h2>
-                    <p>Far far away, behind the word mountains, far from the countries.</p>
-                    <form action="#" class="subscribe-form">
-                        <div class="form-group">
-                            <input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
-                            <input type="submit" value="Subscribe" class="form-control submit px-3">
-                        </div>
-                    </form>
+                    <h2 class="ftco-heading-2">By:</h2>
+                    <ul class="list-unstyled open-hours">
+                        <li class="d-flex"><span>Ali Katour</span><span>96447</span></li>
+                        <li class="d-flex"><span>Khodor Mahdi</span><span>96363</span></li>
+                        <li class="d-flex"><span>Mohammad Ali Othman</span><span>98194</span></li>
+
+                    </ul>
                 </div>
             </div>
         </div>
@@ -66,13 +65,13 @@
             <div class="col-md-12 text-center">
 
                 <p class="mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                 </div>
             </div>
         </div>
     </footer>
-    
+
 
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>

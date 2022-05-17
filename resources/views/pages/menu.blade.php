@@ -28,34 +28,34 @@
             <div class="row">
                 {{-- begin --}}
                 @foreach ($menus as $menu)
-                <div class="col-md-6 col-lg-4">
-                    <div class="menu-wrap">
-                        <div class="heading-menu text-center ftco-animate">
-                            <h3>{{$menu->name}}</h3>
-                        </div>
-                        @foreach ($products as $product)
-                        @if($menu->id==$product->menu_id)
-                        <div class="menus d-flex ftco-animate">
-                            <div class="menu-img img" style="background-image: url({{$product->src}});"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-
-                                        <h3>{{$product->name}}</h3>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-wrap">
+                            <div class="heading-menu text-center ftco-animate">
+                                <h3>{{ $menu->name }}</h3>
+                            </div>
+                            @foreach ($menu->products as $product)
+                                <div class="menus d-flex ftco-animate">
+                                    <div class="menu-img img" style="background-image: url({{ url( 'public/images/$product->src' )}});">
                                     </div>
-                                    <div class="one-forth">
-                                        <span class="price">${{$product->price}} {{$product->currency}}</span>
+                                    <div class="text">
+                                        <div class="d-flex">
+                                            <div class="one-half">
+
+                                                <h3>{{ $product->name }}</h3>
+                                            </div>
+                                            <div class="one-forth">
+                                                <span class="price">${{ $product->price }}
+                                                    {{ $product->currency }}</span>
+                                            </div>
+                                        </div>
+                                        <p>{{ $product->description }}</p>
                                     </div>
                                 </div>
-                                <p>{{$product->desc}}</p>
-                            </div>
+                            @endforeach
                         </div>
-                        @endif
-                        @endforeach
                     </div>
-                </div>
                 @endforeach
             </div>
+        </div>
     </section>
-
-   @endsection
+@endsection
