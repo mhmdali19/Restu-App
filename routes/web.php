@@ -80,6 +80,16 @@ Route::group(['middleware' => ['isAdmin']], function () {
     Route::get('delete/{id}', 'App\Http\Controllers\eventsController@destroy');
 });
 
+/////////////////////////////////////////////////////////////////////////////////////
+Route::get('/reqMenu', 'App\Http\Controllers\MenuController@menuReq');
+Route::get('/reqMenuProd', 'App\Http\Controllers\MenuController@menuProdReq');
+Route::get('/objByid/{menu}', 'App\Http\Controllers\MenuController@menuProdById');
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////
 
 Route::group(['middleware' => ['forAdmins']], function () {
     Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home');

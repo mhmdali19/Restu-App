@@ -35,7 +35,8 @@
                             </div>
                             @foreach ($menu->products as $product)
                                 <div class="menus d-flex ftco-animate">
-                                    <div class="menu-img img" style="background-image: url({{ url('public/images/' . $product->src) }});">
+
+                                    <div class="menu-img img" style="background-image: url({{ url( 'public/images/'.$product->src )}});">
 
                                     </div>
                                     <div class="text">

@@ -14,7 +14,34 @@ class MenuController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+
+
+    public function menuReq(){
+        $menuObj = Menu::all();
+        return response()->json([$menuObj]);
+    }
+
+
+    public function menuProdReq(){
+        $menuProdObj = Menu::with('products')->get();
+        return response()->json([$menuProdObj]);
+    }
+
+
+    public function menuProdById(Menu $menu){
+        // $menuProdObjById = Menu::with('products')->get($id);
+        $menu->products;
+        return response()->json([$menu]);
+    }
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+     public function index()
     {
 
         $products = Product::all();

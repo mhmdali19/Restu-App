@@ -79,16 +79,15 @@
 
 
 
+
+
+
                 <button type="submit" class="button1">Add</button>
             </form>
         </div>
     </section>
     {{-- end of form --}}
 
-    <section>
-        <div class="centerlog">
 
 
-        </div>
-    </section>
 @endsection
